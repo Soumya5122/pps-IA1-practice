@@ -1,15 +1,16 @@
 #include<stdio.h>
-
-void input(int *a,int *b, int *c)
+int input()
 {
-  printf("enter the three numbers\n");
-  scanf("%d %d %d",a,b,c);
+  int num;
+  printf("enter the number:\n");
+  scanf("%d",&num);
+  return 0;
 }
 
-void cmp(int a,int b,int c,int *large)
+int cmp(int a,int b,int c)
 {
   if (a>b && a>c)
-  { 
+  {
     *large=a;
   }
   else if (b>c)
@@ -18,20 +19,16 @@ void cmp(int a,int b,int c,int *large)
   }
   else 
   {
-    *large =c;
+    *large=c;
   }
+  return large;
 }
 
-void output(int largest
+void output(int a,int b,int c,int large)
 {
-  printf("%d is the largest among them\n",largest);
-}
-
-int main()
-{
-  int a,b,c,result;
+  int main();
   input(&a,&b,&c);
   cmp(a,b,c,&result);
   output(result);
-  return 0;
+  return main;
 }
