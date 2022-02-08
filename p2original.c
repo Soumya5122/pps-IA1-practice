@@ -26,9 +26,17 @@ int cmp(int a,int b,int c)
 
 void output(int a,int b,int c,int large)
 {
-  int main();
-  input(&a,&b,&c);
-  cmp(a,b,c,&result);
-  output(result);
-  return main;
+  printf("%d is the largest among them \n",largest);
 }
+
+  int main();
+  {
+    int x,y,z,result;
+    x=input();
+    y=input();
+    z=input();
+    result=cmp(x,y,z);
+    output(result);
+    return 0;
+  }
+  
