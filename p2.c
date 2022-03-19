@@ -23,7 +23,7 @@ int cmp(int a,int b,int c)
   }
   
 }
-void output(int a,int b,int c,int largest)
+void output(int largest)
 {
   printf("the value largest among a,b,c is %d",largest);
   
@@ -33,6 +33,6 @@ int main()
   int a,b,c,largest,result;
   input(a,b,c);
   result= cmp(a,b,c);
-  output(a,b,c,largest);
+  output(largest);
   return 0;
 }
