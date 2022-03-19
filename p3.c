@@ -10,7 +10,7 @@ int sum_n(int n)
 {
   int i;
   int sum=0;
-  for(int i=1;i<=15;i++)
+  for(int i=1;i<=5;i++)
     {
       sum=sum+i;
     }
@@ -22,9 +22,9 @@ void output(int n,int sum)
 }
 int main()
 {
-  int n,i,sum,result;
+  int n,sum,result;
   input_n(n);
-  result=(sum + i);
+  result=sum_n(sum);
   output(n,result);
   return 0;
 }
