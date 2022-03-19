@@ -9,6 +9,7 @@ int input()
 
 int cmp(int a,int b,int c)
 {
+  int *large;
   if (a>b && a>c)
   {
     *large=a;
@@ -21,22 +22,22 @@ int cmp(int a,int b,int c)
   {
     *large=c;
   }
-  return large;
+  
 }
 
 void output(int a,int b,int c,int large)
 {
-  printf("%d is the largest among them \n",largest);
+  printf("%d is the largest among them \n",large);
 }
 
-  int main();
+  int main()
   {
-    int x,y,z,result;
+    int x,y,z,large,result;
     x=input();
     y=input();
     z=input();
     result=cmp(x,y,z);
-    output(result);
+    output(x,y,z,large);
     return 0;
   }
   
