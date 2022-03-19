@@ -1,9 +1,9 @@
 #include<stdio.h>
-int input(int a,int b,int c)
+int input()
 {
-  
-  printf("enter three number\n");
-  scanf("%d %d %d\n",&a,&b,&c);
+  int n;
+  printf("enter a number\n");
+  scanf("%d \n",&n);
   return 0;
 }
 int cmp(int a,int b,int c)
@@ -31,7 +31,9 @@ void output(int largest)
 int main()
 {
   int a,b,c,largest,result;
-  input(a,b,c);
+  a=input();
+  b=input();
+  c=input();
   result= cmp(a,b,c);
   output(largest);
   return 0;
