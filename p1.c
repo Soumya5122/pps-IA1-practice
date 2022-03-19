@@ -2,7 +2,7 @@
 void input(int *a,int *b)
 {
   printf("enter the two values\n");
-  scamf("%d %d",a,b);
+  scanf("%d %d",a,b);
 }
 void add(int a,int b,int *sum)
 {
@@ -14,9 +14,9 @@ void output(int a,int b,int sum)
 }
 int main()
 {
-  int a,b;
+  int a,b,sum;
   input(&a,&b);
-  add = sum(a,b);
+  add (a,b,&sum);
   output(a,b,sum);
   return 0;
 }
