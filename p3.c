@@ -28,9 +28,9 @@ void output(int n,int sum)
 }
 int main()
 {
-  int num,result;
-  num=input_n();
-  result=sum_n(num);
-  output(num,result);
+  int n,result;
+  n=input_n();
+  result=sum_n(n);
+  output(n,result);
   return 0;
 }
