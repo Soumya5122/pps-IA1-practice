@@ -10,17 +10,17 @@ void input_array(int n,int a[n])
 {
   int i;
   printf("enter the arrays\n");
-  for(int i=1;i<=3;i++)
+  for(int i=0;i<=n;i++)
     {
 
-      scanf("%d\n",a[i]);
+      scanf("%d+\n",&a[i]);
     }
 }
 int sum_n_arrays(int n,int a[n])
 {
   int i,sum;
   sum=0;
-  for(int i=1;i<n;i++)
+  for(int i=1;i<=(n-1);i++)
     {
       sum=sum+a[i];
     }
