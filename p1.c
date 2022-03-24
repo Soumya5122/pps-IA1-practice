@@ -2,7 +2,7 @@
 void input(int *a,int *b)
 {
   printf("enter the two values\n");
-  scanf("%d %d",a,b);
+  scanf("%d%d",a,b);
 }
 void add(int a,int b,int *sum)
 {

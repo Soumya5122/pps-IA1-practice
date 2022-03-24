@@ -3,7 +3,7 @@ int input_n()
 {
   int n;
   printf("enter a number\n");
-  scanf("%d\n",&n);
+  scanf("%d",&n);
   return n;
 }
 int sum_n(int n)
@@ -18,13 +18,19 @@ int sum_n(int n)
 }
 void output(int n,int sum)
 {
-  printf("the sum of n numbers is %d\n",(sum));
+  int i;
+
+  for(int i=0;i<=5;i++)
+    {
+      printf(" %d ",i);
+    }
+  printf("%d=%d \n",n,sum);
 }
 int main()
 {
-  int n,sum,result;
-  input_n(n);
-  result=sum_n(sum);
-  output(n,result);
+  int num,result;
+  num=input_n();
+  result=sum_n(num);
+  output(num,result);
   return 0;
 }

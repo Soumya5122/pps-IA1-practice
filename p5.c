@@ -4,13 +4,20 @@ float input()
 {
   float n;
   printf("enter a number\n");
-  scanf("%f\n",&n);
+  scanf("%f",&n);
   return n;
 }
 float my_sqrt(float n)
-{
-  float a=n;
-  a=(pow(n,2));
+{float x=n;
+  float y=1;
+  float e=0.000001;
+  while (x-y>e)
+  {
+    x=(x+y)/2;
+    y=n/x;
+  }
+  return x;
+
 }
 void output(float n,float a)
 {
