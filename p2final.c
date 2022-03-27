@@ -2,42 +2,38 @@
 int input()
 {
   int num;
-  printf("enter the number:\n");
+  printf("enter a number\n");
   scanf("%d",&num);
-  return 0;
+  return num;
 }
-
 int cmp(int a,int b,int c)
-{ 
-  int large;
-  if (a>b && a>c)
+{
+  int *large;
+  if(a>b && a>c)
   {
-    large=a;
+    *large=a;
   }
-  else if (b>c)
+  else if(b>c)
   {
-    large=b;
+    *large=b;
   }
   else 
   {
-    large=c;
-  }
-  return large;
-}
-
-void output(int a,int b,int c,int large)
-{
-  printf("the largest number among %d %d %d %d is %d\n",a,b,c,large);
-}
-
-  int main()
-  {
-    int x,y,z,large;
-    x=input();
-    y=input();
-    z=input();
-    cmp(x,y,z);
-    output(x,y,z,large);
-    return 0;
+    *large=c;
   }
   
+}
+void output(int a,int b,int c,int largest)
+{
+  printf("the number largest among %d,%d,%d is %d\n",a,b,c,largest);
+}
+int main()
+{
+  int a,b,c,largest,result;
+  a=input();
+  b=input();
+  c=input();
+  result=cmp(a,b,c);
+  output(a,b,c,largest);
+  return 0;
+}
