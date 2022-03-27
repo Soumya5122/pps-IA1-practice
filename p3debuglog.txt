@@ -1,4 +1,8 @@
  gcc -g p3original.c
+./a.out
+enter the number
+5
+1+2+3+4+5=15
  gdb a.out
 GNU gdb (Ubuntu 8.1.1-0ubuntu1) 8.1.1
 Copyright (C) 2018 Free Software Foundation, Inc.
