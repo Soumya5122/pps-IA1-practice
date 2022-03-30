@@ -2,31 +2,31 @@
 float input()
 {
   float n;
-  printf("enter a number \n");
+  printf("enter the value\n");
   scanf("%f",&n);
   return n;
 }
 float my_sqrt(float n)
 {
-  float x=n;
-  float y=1;
-  float e=0.000001;
-  while(x-y>e)
+  int sqr,tmp;
+  sqr=n/2;
+  tmp=0;
+  while(sqr !=tmp)
     {
-      x=(x+y)/2;
-      y=n/x;
+      tmp=sqr;
+      sqr=(n/tmp+tmp)/2;
     }
-  return x;
+  return sqr;
 }
 void output(float n,float sqrt_result)
 {
-  printf("square input of given input %0.2f is =%0.2f\n",n,sqrt_result);
+  printf("square root of %0.2f is %0.2f",n,sqrt_result);
 }
 int main()
 {
-  float n,sres;
+  float n,a;
   n=input();
-  sres=my_sqrt(n);
-  output(n,sres);
+  a=my_sqrt(n);
+  output(n,a);
   return 0;
 }
