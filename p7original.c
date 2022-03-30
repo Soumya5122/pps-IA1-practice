@@ -103,7 +103,7 @@ int main()
  c1 = input();
  c2 = input();
 sum = add(c1,c2);
- output(c1, c2, sum);
+ output(c1,c2,sum);
  return 0;
 }
 
