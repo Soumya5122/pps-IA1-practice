@@ -1,17 +1,17 @@
-#include<stdio.h>
-float input()
+ #include<stdio.h>
+  float input()
 {
   float n;
-  printf("enter the value\n");
+  printf("enter a number\n");
   scanf("%f",&n);
   return n;
 }
-float my_sqrt(float n)
+float sqrt(float n)
 {
   int sqr,tmp;
   sqr=n/2;
   tmp=0;
-  while(sqr !=tmp)
+  while(sqr != tmp)
     {
       tmp=sqr;
       sqr=(n/tmp+tmp)/2;
@@ -25,8 +25,9 @@ void output(float n,float sqrt_result)
 int main()
 {
   float n,a;
-  n=input();
-  a=my_sqrt(n);
+  input(n);
+  a=sqrt(n);
   output(n,a);
   return 0;
 }
+   
