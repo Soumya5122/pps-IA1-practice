@@ -1,33 +1,34 @@
 #include<stdio.h>
-int input()
+int input_n()
 {
   int n;
   printf("enter a number\n");
   scanf("%d",&n);
   return n;
 }
-int cmp(int a,int b,int c)
+int sum_n(int n)
 {
-  int large;
-  if(a>b && a>c)
-    large = a;
-  else if(b>c)
-    large = b;
-  else
-    large = c;
-  return large;
+  int sum=0;
+  for(int i=1;i<=n;i++)
+    
+    {
+      sum=sum+i;
+    } 
+  return sum;   
 }
-void output(int a,int b,int c,int largest)
+void output(int n,int sum)
 {
-  printf("largest number among %d,%d and %d is %d",a,b,c,largest);
+  for(int i=0;i<n;i++)
+    {
+      printf("%d+",i);
+    }
+  printf("the sum of %d is %d",n,sum);
 }
 int main()
 {
-  int n,a,b,c,sum,large;
-  a=input();
-  b=input();
-  c=input();
-  large=cmp(a,b,c);
-  output(a,b,c,large);
+  int n,sum;
+  input_n(n);
+  sum=sum_n(n);
+  output(n,sum);
   return 0;
 }
