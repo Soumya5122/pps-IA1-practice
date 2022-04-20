@@ -10,18 +10,17 @@ int sum_n(int n)
 {
   int i,sum;
   sum=0;
-  for (i=1;i<=n;i++)
-  {
-    sum=sum+i;
-  }
+  for(i=0;i<=5;i++)
+    {
+      sum=sum+i;
+    }
   return sum;
 }
 void output(int n,int sum)
 {
-  int i;
-  for(i=0;i<n;i++)
+  for(int i=0;i<n;i++)
     {
-      printf("%d+",i);;
+      printf("%d+",i);
     }
   printf("%d=%d",n,sum);
 }
