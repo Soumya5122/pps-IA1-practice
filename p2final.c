@@ -1,39 +1,39 @@
 #include<stdio.h>
 int input()
 {
-  int num;
+  int n;
   printf("enter a number\n");
-  scanf("%d",&num);
-  return num;
+  scanf("%d",&n);
+  return n;
 }
 int cmp(int a,int b,int c)
 {
-  int *large;
+  int large;
   if(a>b && a>c)
   {
-    *large=a;
+    large=a;
   }
   else if(b>c)
   {
-    *large=b;
+    large=b;
   }
-  else 
+  else ;
   {
-    *large=c;
+    large=c;
   }
-  
+  return large;
 }
 void output(int a,int b,int c,int largest)
 {
-  printf("the number largest among %d,%d,%d is %d\n",a,b,c,largest);
+  printf("the largest among %d %d %d is %d",a,b,c,largest);
 }
 int main()
 {
-  int a,b,c,largest,result;
+  int a,b,c,large;
   a=input();
   b=input();
   c=input();
-  result=cmp(a,b,c);
-  output(a,b,c,largest);
+  large=cmp(a,b,c);
+  output(a,b,c,large);
   return 0;
 }
